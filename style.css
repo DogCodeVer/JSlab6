@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.index{
+    display: inline-fles;
+}
+.line{
+    width: 200px;
+    height: 20px;
+}
+
+.line hr{
+    width: 100px;
+    float: none;
+    border: 2px solid blue;
+}
+
+p{
+    font-family: Calibri;
+}
+
+.main{
+    display: inline-flex;
+    background-color: lightgray;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.photo{
+    padding: 10px;
+}
+
+.photo img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+.ask{
+    width: 100%;
+    display:flex;
+    flex-flow: column wrap;
+    padding: 20px;
+}
+
+
+.fio {
+    display: inline-flex;
+    padding-bottom: 10px;
+}
+
+.sex p{
+    padding-right: 13px;
+}
+
+.fio input{
+    background: #d3d3d3;
+    border: 0;
+    font-size: 16px;
+
+}
+.sex{
+    display: inline-flex;
+    padding-bottom: 10px;
+}
+
+.bd{
+    display: inline-flex;
+    padding-bottom: 5px;
+}
+
+.btn{
+    margin-top: 50%;
+    width: 100%;
+}
+.btn input{
+    width: 100%;
+}
+.year{
+    display: inline-flex;
+}
+.year input{
+    width: 20px;
+}
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="photo">
+            <img src="photo.jpg" alt="photo_main">
+        </div>
+        <div class="ask">
+            <div class="fio">
+                <p>ФИО:</p>
+                <input type="text" id="fio" placeholder="Фамилия Имя Отчество" disabled>
+            </div>
+            <div class="sex">
+                <p>Пол:</p>
+                <input type="radio" id="male" disabled><p>Мужской</p>
+                <input type="radio" id="female" disabled><p>Женский</p>
+            </div>
+            <div class="bd">
+                <p>Дата рождения:</p>
+                <input type="date" id="day" disabled>
+            </div>
+            <div class="year">
+                <p>Лет:</p>
+                <input type="text" id="year" disabled>
+            </div>
+            <div class="btn"><input type="button" id="btn" value="ИЗМЕНИТЬ" onclick="edit()"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

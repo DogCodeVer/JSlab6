@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../Documents/labJS6/style.css">
+</head>
+<body class="index">
+    <div class="line" >
+        <hr id="line">
+    </div>
+    <div class="align_btn">
+        <input type="button" value="align:left" onclick="left()">
+        <input type="button" value="align:centre" onclick="centre()">
+        <input type="button" value="align:right" onclick="right()">
+    </div>
+    <div class="shade">
+        <input type="button" value="noshade:on" onclick="shade_on()">
+        <input type="button" value="noshade:off" onclick="shade_off()">
+    </div>
+    <div class="color_btn">
+        <input type="button" value="color:blue" onclick="blue()">
+        <input type="button" value="color:green" onclick="green()">
+        <input type="button" value="color:pink" onclick="pink()">
+    </div>
+    <div class="size">
+        <input type="text" id="size" placeholder="Длинна линии в пикселях">
+        <input type="button" value="Изменить" onclick="edit_size(document.getElementById('size').value)">
+    </div>
+    <div class="width">
+        <input type="text" id="width" placeholder="Ширина линии в пикселях">
+        <input type="button" value="Изменить" onclick="edit_width(document.getElementById('width').value)">
+    </div>
+    <script>
+
+        // align
+        function left() {
+            document.getElementById('line').style.float="left";
+        }
+        function centre() {
+            document.getElementById('line').style.float="none";
+        }
+        function right() {
+            document.getElementById('line').style.float="right";
+        }
+        
+        function shade_on() {
+            document.getElementById('line').setAttribute("noshade",'true')
+        }
+
+        function shade_off() {
+            document.getElementById('line').removeAttribute("noshade")
+        }
+
+        // color
+        function blue(){
+            document.getElementById('line').style.borderColor='blue';
+        }
+        function green(){
+            document.getElementById('line').style.borderColor='green';
+        }
+        function pink(){
+            document.getElementById('line').style.borderColor='pink';
+        }
+
+        // size
+        function edit_size(a){
+            document.getElementById('line').style.width=a+'px';
+        }
+        function edit_width(a){
+            document.getElementById('line').style.borderWidth=a+'px';
+        }
+
+    </script>
+
+    <a href="zad2.html">Следующая</a>
+</body>
+</html>
